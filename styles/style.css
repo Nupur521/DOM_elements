@@ -1,0 +1,83 @@
+.container {
+  width: 42%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.heading {
+  font-family: "Overpass", sans-serif;
+  /* font-weight: 900; */
+  font-size: 2rem;
+  color: white;
+  -webkit-text-stroke: 1.6px black;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.moneyOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-right: 0.1rem solid grey;
+  /* margin-left: rem; */
+  width: 66%;
+  padding: 0.4rem;
+}
+
+.moneyOptions > * {
+  display: flex;
+  width: 89%;
+  border: 1px solid black;
+  border-radius: 0.2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.38rem;
+  font-weight: 500;
+}
+
+.mainBody {
+  display: flex;
+}
+
+.personWithWealth {
+  display: flex;
+  padding: 0.4rem;
+  width: 89%;
+}
+.personWithWealth > * {
+  flex-basis: 100%;
+}
+
+.horizontalRule {
+  border-style: none;
+  border-bottom: 0.1px solid grey;
+}
+
+.wealth {
+  text-align: right;
+}
+/* adding pseudo classes */
+
+.moneyOptions > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 1px 1px 0 0 grey;
+}
+
+.newUserDetails {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.total {
+  margin-top: 0.4rem;
+}
+
+.totalMoney {
+  display: none;
+}
